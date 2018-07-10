@@ -58,3 +58,25 @@ article {
 article::before {
     content: "Article parent element"
 }
+
+nav {
+    background-color: darkslateblue;
+    margin: none;
+}
+
+nav > ul > li {
+    color: white;
+}
+
+/* When the user hovers over one of the links, the color of the text should change. */
+/* When the user hovers over one of the links, the background color of the element that contains the link should change. */
+nav > ul > li:hover {
+    background-color: greenyellow;
+    color: darkslateblue;
+}
+
+/* When the user clicks on one of the links, the element that contains the link should grow in size by 5px on the left and right. */
+nav > ul > li:active {
+    padding-left: 5px;
+    padding-right: 5px;
+}
